@@ -1,0 +1,1 @@
+This project utilises HTML and CSS skills learnt in the Udacity course to build out a personal blog website, including custom images, layout, and styling. The project includes webpage design considerations, structured files, and CSS and HTML formatting & style.

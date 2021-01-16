@@ -1,6 +1,6 @@
 
 
-.container {
+.blog-page-container {
     display: grid;
     grid-template:
         'header header header header header header'
@@ -16,14 +16,28 @@
     margin:auto;
 }
 
-  
+.blog-page-content {
+    grid-area:main;
+    display: flex;
+    flex-direction: column;
+}
+.blog-main-image {
+    width: 350px;
+    height: 350px;
+}
+.blog-content {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
   @media screen and (max-width: 1200px) {
-    .content {
+    .blog-page-content {
         grid-area:main;
         display: flex;
         flex-direction: column;
     }
-    .container {
+    .blog-page-container {
       background-color: #d49e4a;
       width: 800px;
     }
@@ -35,20 +49,20 @@
     .blog-content {
         flex-direction: column;
     }
-    .blog-image {
+    .blog-main-image{
         width: 350px;
         height: 350px;
     }
 
   }
   @media screen and (max-width: 800px) {
-    .container {
+    .blog-page-container {
       width: 600px;
     }
     .blog-text {
         width: 550px;
     }
-    .blog-image {
+    .blog-main-image {
         width: 250px;
         height: 250px;
     }
@@ -57,70 +71,6 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    .blog-image {
-        width: 350px;
-        height: 350px;
-    }
-  }
-
-.outer-container {
-    background-color: #37abb4;
-}
-.nav-flex {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-button {
-    border: #d49e4a 1px solid;
-    background-color: #7ed2bb;
-    color: #585252;
-    font-weight: bold;
-    padding: 2px;
-    width: 10%;
-    font-size: 14px;
-}
-
-.box {
-    background-color: #585252;
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-    color: #7ed2bb;
-}
-
-#header {
-    grid-area:header;
-    background-image:url(images/79ef19ea-0899-4218-804e-e58c3aed4ce3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.content {
-    grid-area:main;
-}
-
-p {
-    overflow-wrap: break-word;
-}
-
-.navbar {
-    grid-area:nav;
-}
-
-.footer {
-    grid-area:footer;
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-size: 14px;
-}
-
-a {
-    text-decoration: none;
-    color: #7ed2bb;
-}
 
 a.button {
     -webkit-appearance: button;
@@ -150,9 +100,4 @@ a.button {
     height: 50px;
 }
 
-.blog-content {
-    font-size: 16px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+
